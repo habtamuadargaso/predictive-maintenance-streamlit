@@ -1,145 +1,161 @@
-# ✅ **FINAL README (copy everything below)**
 
-````markdown
-# 🔧 Predictive Maintenance Failure Predictor
+# 🚀 Predictive Maintenance Failure Predictor
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://predictive-maintenance-app-mmvekivq54jgrdehkwyaxz.streamlit.app/)
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
-![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange)
-![Status](https://img.shields.io/badge/Status-Deployed-success)
-
-An **end-to-end Machine Learning web application** that predicts **industrial machine failure risk** using the **AI4I 2020 Predictive Maintenance dataset**.
-
-Built with **Logistic Regression**, deployed via **Streamlit Cloud**, and designed as a **real-world portfolio project** demonstrating the full ML lifecycle.
+🔗 **Live Demo:**
+[https://predictive-maintenance-app-mmvekivq54jgrdehkwyaxz.streamlit.app/](https://predictive-maintenance-app-mmvekivq54jgrdehkwyaxz.streamlit.app/)
 
 ---
 
-## 🚀 Live Demo
+## 📌 Project Overview
 
-👉 **Try the app here:**  
-https://predictive-maintenance-app-mmvekivq54jgrdehkwyaxz.streamlit.app/
+This project is an **end-to-end Machine Learning web application** that predicts the probability of industrial machine failure using operational sensor data.
 
----
+The system helps organizations:
 
-## 🖼️ Screenshots
+* Detect high-risk machines early
+* Reduce downtime
+* Optimize maintenance scheduling
+* Prevent unexpected failures
 
-### 📊 Input Interface
-![Input](assets/app_input.png)
-
-### 🤖 Prediction Result
-![Result](assets/app_result.png)
+The model is trained on the **AI4I 2020 Predictive Maintenance dataset** and deployed as a **public interactive Streamlit web app**.
 
 ---
 
-## ✨ Key Features
+## 🧠 Machine Learning Workflow
 
-- Interactive **Streamlit web interface**
-- Real-time **machine failure probability prediction**
-- Adjustable **risk threshold slider**
-- Automatic **LOW / HIGH risk classification**
-- Model loaded from saved **scikit-learn pipeline**
-- Fully deployed online for public access
-
----
-
-## 🧠 Machine Learning Model
-
-- Algorithm: **Logistic Regression**
-- Dataset: **AI4I 2020 Predictive Maintenance**
-- Pipeline includes:
-  - Feature preprocessing
-  - Model training
-  - Probability prediction
-- Saved using **Joblib**
+✔ Data loading and preprocessing
+✔ Feature engineering and selection
+✔ Handling categorical variables
+✔ Model training using Logistic Regression
+✔ Pipeline creation with preprocessing + model
+✔ Model evaluation and probability prediction
+✔ Saving trained pipeline with `joblib`
+✔ Deploying interactive web app using Streamlit Cloud
 
 ---
 
-## 📥 Model Inputs
+## 📊 Input Features
 
-The app predicts failure risk based on:
+The app predicts machine failure using:
 
-- Machine Type (L / M / H)
-- Air Temperature [K]
-- Process Temperature [K]
-- Rotational Speed [rpm]
-- Torque [Nm]
-- Tool Wear [min]
-
----
-
-## 📤 Output
-
-- Failure probability (0–100%)
-- Risk label:
-  - 🟢 LOW FAILURE RISK
-  - 🔴 HIGH FAILURE RISK
-- Recommended action guidance
+* Machine Type (L / M / H)
+* Air Temperature (K)
+* Process Temperature (K)
+* Rotational Speed (RPM)
+* Torque (Nm)
+* Tool Wear (minutes)
 
 ---
 
-## 🧰 Tech Stack
+## 📈 Output
 
-- **Python**
-- **Pandas / NumPy**
-- **scikit-learn**
-- **Streamlit**
-- **Joblib**
+The application returns:
+
+* **Failure probability (%)**
+* **Risk classification (Low / High)**
+* **Recommended maintenance action**
 
 ---
 
-## ⚙️ Run Locally
 
-Clone the repo:
+
+### Input Interface
+![App Input](assets/app_input.png)
+
+### Prediction Result
+![Prediction Result](assets/app_result.png)
+---
+
+## ⚙️ Tech Stack
+
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* Joblib
+* Streamlit
+* Git & GitHub
+* Streamlit Cloud (deployment)
+
+---
+
+## 📂 Project Structure
+
+```
+predictive-maintenance-streamlit/
+│
+├── app.py
+├── requirements.txt
+├── model/
+│   └── pipeline.joblib
+├── assets/        # screenshots (optional)
+└── README.md
+```
+
+---
+
+## ▶️ Run Locally
+
+### 1️⃣ Clone repository
 
 ```bash
 git clone https://github.com/habtamuadargaso/predictive-maintenance-streamlit.git
 cd predictive-maintenance-streamlit
-````
+```
 
-Create virtual environment:
+### 2️⃣ Create virtual environment
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-Install dependencies:
+### 3️⃣ Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the app:
+### 4️⃣ Run Streamlit app
 
 ```bash
-python3 -m streamlit run app.py
+streamlit run app.py
+```
+
+Open browser:
+
+```
+http://localhost:8501
 ```
 
 ---
 
-## 📁 Project Structure
+## 🌍 Deployment
 
-```
-predictive-maintenance-streamlit/
-├── app.py
-├── requirements.txt
-├── README.md
-├── model/
-│   └── pipeline.joblib
-└── assets/
-    ├── app_input.png
-    └── app_result.png
-```
+The app is deployed publicly using **Streamlit Community Cloud**.
+
+👉 Live link:
+[https://predictive-maintenance-app-mmvekivq54jgrdehkwyaxz.streamlit.app/](https://predictive-maintenance-app-mmvekivq54jgrdehkwyaxz.streamlit.app/)
 
 ---
 
 ## 👤 Author
 
 **Habtamu Dargaso**
-Data Scientist | Machine Learning Engineer
 
----
+* Data Scientist | Machine Learning Engineer
+* Master’s in Data Science & Computer Science
+* Seattle, WA
+
+GitHub:
+[https://github.com/habtamuadargaso](https://github.com/habtamuadargaso)
+
+LinkedIn:
+linkedin.com/in/habtamu-dargaso-b81676119
+
+
+
+
 
 
 
