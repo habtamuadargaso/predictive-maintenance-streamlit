@@ -2,6 +2,11 @@
 
 This project is an end-to-end Machine Learning web app that predicts machine failure risk using the AI4I 2020 dataset.
 
+## 🚀 Live Demo
+
+Try the deployed app here:
+https://predictive-maintenance-app-mmvekivq54jgrdehkwyaxz.streamlit.app/
+
 ## Features
 - Streamlit web interface
 - Logistic Regression ML model
